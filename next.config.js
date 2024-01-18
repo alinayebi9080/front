@@ -4,15 +4,7 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "**.tmdb.org",
-      },
-      {
-        protocol: "https",
-        hostname: "images.generated.photos",
-      },
-      {
-        protocol: "https",
-        hostname: "image.freepik.com",
+        hostname: "image.tmdb.org",
       },
     ],
   },
