@@ -1,4 +1,3 @@
-"use clientSide";
 import React, { useEffect, useState } from "react";
 
 import ProfileContent from "./dashboardContents/profileContent/ProfileContent";
