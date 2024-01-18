@@ -1,13 +1,7 @@
-import RootLayout from '../app/layout'
-import React from 'react'
-
+import React from "react";
 
 const App = ({ Component, pageProps }) => {
-  return (
-    <RootLayout>
-      <Component {...pageProps} />
-    </RootLayout>
-  )
-}
+  return <Component {...pageProps} />;
+};
 
-export default App
+export default App;
