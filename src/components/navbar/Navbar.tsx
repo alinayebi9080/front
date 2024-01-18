@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import Image from "next/image";
 import UserProfileDropdownModal from "./UserProfileDropdownModal";
 
-import "./navbar-styles.css";
-
 import NetflixLogo from "../../assets/image-logo/Netflix-logo.svg";
 import search from "../../assets/image-logo/search.svg";
 import giftBox from "../../assets/image-logo/giftBox.svg";

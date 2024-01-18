@@ -4,9 +4,6 @@ import { useFormik } from "formik";
 import * as Yup from "yup";
 import Swal from "sweetalert2";
 
-import "./login-styles.css";
-
-import axiosInstance from "../../utils/axiosConfig";
 import SignInSignUpHeader from "../sIn-sUp-header/SignInSignUpHeader";
 import { useRouter } from "next/navigation";
 import Link from "next/link";

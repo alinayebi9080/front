@@ -1,7 +1,6 @@
 "use clientSide";
 import React, { useEffect, useState } from "react";
 
-import "./dashboard-styles.css";
 import ProfileContent from "./dashboardContents/profileContent/ProfileContent";
 import axios from "axios";
 import { useRouter } from "next/router";
@@ -103,9 +102,6 @@ const UserDashboard = () => {
     <div>
       <div>
         <Head>
-          <link rel="preconnect" href="https://rsms.me/" />
-          <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
-
           <style>
             {
               `:root { font-family: 'Inter', sans-serif; }

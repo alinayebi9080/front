@@ -1,7 +1,6 @@
 import React from "react";
 import Image from "next/image";
 
-import "./hero-styles.css";
 import play from "../../assets/image-logo/Play.svg";
 import info from "../../assets/image-logo/info.svg";
 import Top10 from "../../assets/image-logo/Top10.svg";
@@ -10,7 +9,9 @@ const HeroSection = () => {
   return (
     <div className="hero-container">
       <div className="hero-movie-details md:w-[40rem] w-[20rem] flex flex-col gap-8 relative top-[20rem] left-[1.75rem] sm:left-[2.75rem] max-w-[480px]">
-        <div className="movie-title font-medium lg:text-[5rem] md:text-[4rem] text-5xl ">Money Heist</div>
+        <div className="movie-title font-medium lg:text-[5rem] md:text-[4rem] text-5xl ">
+          Money Heist
+        </div>
         <div className="md:text-3xl text-xl flex align-middle gap-4">
           <Image src={Top10} alt="Top10 sign" width={32} height={32} />
           Number 4 in UK Today

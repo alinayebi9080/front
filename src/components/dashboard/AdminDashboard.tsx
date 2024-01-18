@@ -1,14 +1,11 @@
-"use clientSide";
+"use client";
 import React, { useEffect, useState } from "react";
 import Head from "next/head";
 
-import "./dashboard-styles.css";
-import DashboardContent from "./dashboardContents/AdminMainDashboardContent";
 import ProfileContent from "./dashboardContents/profileContent/ProfileContent";
 import UsersManagement from "./dashboardContents/UsersManagement";
 import axios from "axios";
 import { useRouter } from "next/router";
-import UserPersonalInfo from "./dashboardContents/profileContent/userPersonalInfo";
 import Swal from "sweetalert2";
 import AdminMainDashboardContent from "./dashboardContents/AdminMainDashboardContent";
 import Image from "next/image";
@@ -108,7 +105,6 @@ const AdminDashboard = () => {
       <div>
         <Head>
           <link rel="preconnect" href="https://rsms.me/" />
-          <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
 
           <style>
             {
