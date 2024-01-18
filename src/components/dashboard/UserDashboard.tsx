@@ -9,6 +9,7 @@ import UserPersonalInfo from "./dashboardContents/profileContent/userPersonalInf
 import UserMainDashboardContent from "./dashboardContents/UserMainDashboardContent";
 import Head from "next/head";
 import Swal from "sweetalert2";
+import Link from "next/link";
 
 const UserDashboard = () => {
   const [activeContent, setActiveContent] = useState("");
@@ -122,7 +123,7 @@ const UserDashboard = () => {
                 Dashboard<span className="text-indigo-400">.</span>
               </h1>
               <p className="text-slate-400 text-sm mb-2">Welcome</p>
-              <a
+              <Link
                 href="#"
                 className="flex flex-col space-y-2 md:space-y-0 md:flex-row mb-5 items-center md:space-x-2 hover:bg-white/10 group transition duration-150 ease-linear rounded-lg group w-full py-3 px-2"
               >
@@ -139,10 +140,10 @@ const UserDashboard = () => {
                   </p>
                   <span className="text-xs text-slate-400"></span>
                 </div>
-              </a>
+              </Link>
               <hr className="my-2 border-slate-700"></hr>
               <div id="menu" className="flex flex-col space-y-2 my-5">
-                <a
+                <Link
                   href="/home"
                   className="hover:bg-white/10 transition duration-150 ease-linear rounded-lg py-3 px-2 group"
                   onClick={() => handleMenuClick("dashboard")}
@@ -173,8 +174,8 @@ const UserDashboard = () => {
                       </p>
                     </div>
                   </div>
-                </a>
-                <a
+                </Link>
+                <Link
                   href="#"
                   className="hover:bg-white/10 transition duration-150 ease-linear rounded-lg py-3 px-2 group"
                   onClick={() => handleMenuClick("dashboard")}
@@ -205,8 +206,8 @@ const UserDashboard = () => {
                       </p>
                     </div>
                   </div>
-                </a>
-                <a
+                </Link>
+                <Link
                   href="#"
                   className="hover:bg-white/10 transition duration-150 ease-linear rounded-lg py-3 px-2 group"
                   onClick={() => handleMenuClick("profile")}
@@ -237,8 +238,8 @@ const UserDashboard = () => {
                       </p>
                     </div>
                   </div>
-                </a>
-                <a
+                </Link>
+                <Link
                   href="#"
                   className="hover:bg-white/10 transition duration-150 ease-linear rounded-lg py-3 px-2 group"
                 >
@@ -273,7 +274,7 @@ const UserDashboard = () => {
                       </p>
                     </div>
                   </div>
-                </a>
+                </Link>
               </div>
               <p className="text-sm text-center text-gray-600">
                 v1.0.0 | &copy; 2023 Kaveh RezaeiJAmi

@@ -3,12 +3,12 @@ import axios from "axios";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import Swal from "sweetalert2";
-import { useRouter } from "next/router";
 
 import "./changePassword-style.css";
 
 // import axiosInstance from "../../../utils/axiosConfig";
 import SignInSignUpHeader from "../../sIn-sUp-header/SignInSignUpHeader";
+import { useRouter } from "next/navigation";
 
 const ResetPassword = () => {
   const router = useRouter();
@@ -25,7 +25,7 @@ const ResetPassword = () => {
         .required("Required")
         .min(6, "Password must be at least 6 characters"),
       confirmPassword: Yup.string()
-        .oneOf([Yup.ref("newPassword"), null], "Passwords must match")
+        .oneOf([Yup.ref("newPassword")], "Passwords must match")
         .required("Required"),
     }),
     onSubmit: async (values, { setSubmitting }) => {

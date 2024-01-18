@@ -9,6 +9,7 @@ import "./login-styles.css";
 import axiosInstance from "../../utils/axiosConfig";
 import SignInSignUpHeader from "../sIn-sUp-header/SignInSignUpHeader";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 const Login = () => {
   const router = useRouter();
@@ -166,12 +167,12 @@ const Login = () => {
             </div>
             <p className="text-sm font-light dark:text-gray-400">
               New to Netflix?{" "}
-              <a
+              <Link
                 href="/signup"
                 className="font-medium text-primary-400 hover:underline dark:text-primary-500"
               >
                 Sign up now.
-              </a>
+              </Link>
             </p>
 
             <p className=" recaptcha-info text-xs font-light dark:text-gray-400 ">

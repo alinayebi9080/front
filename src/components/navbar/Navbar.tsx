@@ -10,6 +10,7 @@ import giftBox from "../../assets/image-logo/giftBox.svg";
 import bell from "../../assets/image-logo/bell.svg";
 import arrowDown from "../../assets/image-logo/arrowDown.svg";
 import profileAvatar from "../../assets/image-logo/ProfileIMG.svg";
+import Script from "next/script";
 
 const Navbar: React.FC = () => {
   const [isUserDropdownVisible, setIsUserDropdownVisible] = useState(false);
@@ -193,7 +194,7 @@ const Navbar: React.FC = () => {
           </div>
         </div>
       </nav>
-      <script src="https://unpkg.com/@themesberg/flowbite@1.1.1/dist/flowbite.bundle.js"></script>
+      <Script src="https://unpkg.com/@themesberg/flowbite@1.1.1/dist/flowbite.bundle.js"></Script>
     </>
   );
 };

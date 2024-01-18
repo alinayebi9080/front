@@ -13,6 +13,7 @@ interface MovieItem {
 interface MovieDataFetcherProps {
   endpoint: string;
   title: string;
+  transformFunction: (a: any) => any;
 }
 
 const MovieDataFetcher: React.FC<MovieDataFetcherProps> = ({

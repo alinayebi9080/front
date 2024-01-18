@@ -1,11 +1,10 @@
 import axios from "axios";
 import React, { useState } from "react";
 import Swal from "sweetalert2";
-import { useRouter } from "next/router";
 
 interface UserInfoModalProps {
   onClose: () => void;
-  user: {
+  user?: {
     name: string | null;
     dateOfBirth: string | null;
     phoneNumber: string | null;
@@ -21,10 +20,10 @@ const UserInfoModal: React.FC<UserInfoModalProps> = ({
 }) => {
   const [loading, setLoading] = useState(false);
   const [formData, setFormData] = useState({
-    name: user.name || "",
-    dateOfBirth: user.dateOfBirth || "",
-    phoneNumber: user.phoneNumber || "",
-    address: user.address || "",
+    name: user?.name || "",
+    dateOfBirth: user?.dateOfBirth || "",
+    phoneNumber: user?.phoneNumber || "",
+    address: user?.address || "",
   });
 
   const handleChange = (

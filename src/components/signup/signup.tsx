@@ -182,12 +182,12 @@ const SignUp = () => {
 
             <p className="text-sm font-light text-gray-700 dark:text-gray-400">
               Already have an account?{" "}
-              <a
+              <Link
                 href="/login"
                 className="font-medium text-white  text-primary-400 hover:underline dark:text-primary-500"
               >
                 Login here
-              </a>
+              </Link>
             </p>
             <p className=" recaptch-info text-xs font-light dark:text-gray-400 ">
               Sign-in is protected by Google reCAPTCHA to ensure you’re not a

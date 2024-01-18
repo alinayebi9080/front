@@ -245,7 +245,6 @@ const ProfileContent: React.FC = () => {
             {showUserInfoModal && (
               <UserInfoModal
                 onClose={() => setShowUserInfoModal(false)}
-                user={{}}
                 userId={userId}
               />
             )}
